@@ -63,6 +63,9 @@ params:
     displayCopyright: false
     displayPoweredBy: false
 
+  imageZoom:
+    enable: true
+
   editURL:
     enable: true
     base: "https://github.com/batcrou31/hugo-hextra/edit/main/content"
