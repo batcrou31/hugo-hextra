@@ -53,8 +53,7 @@ params:
   footer:
     displayCopyright: false
     displayPoweredBy: false
-    copyright: "© 2026 Baptiste CROUVIZIER"
-    
+
   editURL:
     enable: true
     base: "https://github.com/batcrou31/hugo-hextra/edit/main/content"
