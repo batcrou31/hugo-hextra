@@ -34,14 +34,24 @@ menu:
       pageRef: /administration-systeme
       parent: windows
       weight: 2
+    # --- Linux ---
+    - identifier: linux
+      name: "Linux"
+      weight: 2
+      params:
+        type: menu
+    - name: "Debian"
+      pageRef: /linux/debian
+      parent: linux
+      weight: 1
     - name: "À propos"
       pageRef: /about
-      weight: 2
+      weight: 3
     - name: Contact ↗
       url: "https://github.com/imfing"
-      weight: 3
-    - name: Search
       weight: 4
+    - name: Search
+      weight: 5
       params:
         type: search
 
@@ -49,9 +59,6 @@ menu:
 enableGitInfo: true
 
 params:
-  page:
-    # full (100%), wide (90rem), normal (1280px)
-    width: normal
   # Display the last modification date
   displayUpdatedDate: true
   dateFormat: "2 Jan 2006"
