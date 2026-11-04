@@ -66,8 +66,8 @@ params:
   imageZoom:
     enable: true
     base: "https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist"
-    # js: "js/medium-zoom.min.js" # optional, relative to the base or local assets
-    
+    js: "js/medium-zoom.min.js" # optional, relative to the base or local assets
+
   editURL:
     enable: true
     base: "https://github.com/batcrou31/hugo-hextra/edit/main/content"
