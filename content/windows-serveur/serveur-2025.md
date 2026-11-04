@@ -10,7 +10,7 @@
 
 Schéma explicatif :  
 
-![](SRV22_CR.png)
+![serveur](SRV22_CR.png)
 
 ``` PowerShell
 New-VMSwitch -Name "Externe" -NetAdapterName "LAN HYPER-V" -AllowNetlbfoTeams $true -AllowManagement $true
