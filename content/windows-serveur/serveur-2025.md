@@ -1,4 +1,8 @@
-# Serveur 2025
+---
+title: Serveur 2025
+sidebar:
+  exclude: true
+---
 
 ## Divers
 
