@@ -23,7 +23,7 @@ menu:
     - name: Docs
       pageRef: /docs
       weight: 1
-    - name: About
+    - name: "À propos"
       pageRef: /about
       weight: 2
     - name: Contact ↗
