@@ -45,7 +45,16 @@ menu:
       params:
         type: search
 
+# Parse Git commit
+enableGitInfo: true
+
 params:
+  # Display the last modification date
+  displayUpdatedDate: true
+  dateFormat: "2 Jan 2006"
+  # Display the author of the last modification
+  displayUpdatedAuthor: false
+
   navbar:
     displayTitle: true
     displayLogo: false
