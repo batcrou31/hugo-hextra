@@ -20,9 +20,20 @@ defaultContentLanguage: fr
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
+    # --- Microsoft ---
+    - identifier: windows
+      name: "Windows"
       weight: 1
+      params:
+        type: menu
+    - name: "Windows Serveur"
+      pageRef: /windows-server
+      parent: windows
+      weight: 1
+    - name: "Administration système"
+      pageRef: /administration-systeme
+      parent: windows
+      weight: 2
     - name: "À propos"
       pageRef: /about
       weight: 2
