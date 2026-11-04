@@ -27,11 +27,11 @@ menu:
       params:
         type: menu
     - name: "Windows Serveur"
-      pageRef: /windows/windows-serveur
+      pageRef: /windows-serveur
       parent: windows
       weight: 1
     - name: "Administration système"
-      pageRef: /windows/administration-systeme
+      pageRef: /administration-systeme
       parent: windows
       weight: 2
     - name: "À propos"
