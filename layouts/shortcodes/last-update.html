@@ -1,9 +1,0 @@
-{{/* Date de la dernière modification du site */}}
-<p class="last-update">
-  Dernière mise à jour : {{ time.Format ":date_long" site.LastChange }}
-</p>
-
-{{/* Optionnel : la page modifiée en dernier */}}
-{{ with index (sort site.RegularPages "Lastmod" "desc") 0 }}
-  <p>Dernière page modifiée : <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
-{{ end }}
