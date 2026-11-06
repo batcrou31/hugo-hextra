@@ -5,11 +5,9 @@ layout: hextra-home
 
 {{< hextra/hero-badge >}}
   <div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
-  <span>Dernière mise à jour le : **{{< last-update >}}**.</span>
+  <span>Dernière mise à jour le : .</span>
   {{< icon name="arrow-circle-right" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
-
-Dernière mise à jour : {{ .Lastmod | time.Format ":date_medium" }}
 
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
