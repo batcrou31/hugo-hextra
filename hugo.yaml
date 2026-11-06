@@ -1,5 +1,6 @@
 # Hugo configuration file
 title: batcrou.fr
+copyright: "© 2026 Baptiste CROUVIZIER."
 
 # import hextra as module
 module:
@@ -40,7 +41,6 @@ menu:
       weight: 2
       params:
         type: link
-        icon: collection
     # --- Linux ---
     # - identifier: linux
     #   name: "Linux"
