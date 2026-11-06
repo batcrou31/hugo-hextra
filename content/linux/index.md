@@ -7,6 +7,10 @@ layout: wide
 <div class="hx:mt-4"></div>
 
 {{< cards >}}
+  {{< card link="../debian/conf-deb-13/" title="test" icon="warning" >}}
+{{< /cards >}}
+
+{{< cards >}}
   {{< card
         link="../debian/"
         title="Configuration debian 13"
