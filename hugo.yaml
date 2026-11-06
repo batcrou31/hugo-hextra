@@ -90,3 +90,9 @@ params:
     enable: true
     base: "https://github.com/batcrou31/hugo-hextra/edit/main/content"
 
+frontmatter:
+  lastmod:
+    - lastmod
+    - :git
+    - date
+    - publishDate
