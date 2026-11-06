@@ -1,7 +1,5 @@
 ---
 title: Debian 13
-cascade:
-  type: docs
 ---
 
 ## __1 - Configuration Réseau__
