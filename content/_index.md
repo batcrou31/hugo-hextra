@@ -9,7 +9,7 @@ layout: hextra-home
   {{< icon name="arrow-circle-right" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
 
-Dernière mise à jour : {{< last-update >}}
+Dernière mise à jour : {{ .Lastmod | time.Format ":date_medium" }}
 
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
