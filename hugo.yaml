@@ -35,22 +35,16 @@ menu:
       pageRef: /administration-systeme
       parent: windows
       weight: 2
+    # --- Linux ---
     - identifier: linux
-      name: Linux
-      pageRef: /linux
+      name: "Linux"
       weight: 2
       params:
-        type: link
-    # --- Linux ---
-    # - identifier: linux
-    #   name: "Linux"
-    #   weight: 2
-    #   params:
-    #     type: menu
-    # - name: "Debian"
-    #   pageRef: /linux/debian
-    #   parent: linux
-    #   weight: 1
+        type: menu
+    - name: "Debian"
+      pageRef: /linux/debian
+      parent: linux
+      weight: 1
     - name: "À propos"
       pageRef: /about
       weight: 3
