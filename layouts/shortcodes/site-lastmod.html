@@ -1,7 +1,0 @@
-{{- $lastmod := time.AsTime 0 -}}
-{{- range .Site.AllPages -}}
-  {{- if and (not .Lastmod.IsZero) (gt .Lastmod $lastmod) -}}
-    {{- $lastmod = .Lastmod -}}
-  {{- end -}}
-{{- end -}}
-{{- $lastmod | time.Format "02/01/2006" -}}
