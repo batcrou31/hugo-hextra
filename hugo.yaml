@@ -77,8 +77,9 @@ params:
     displayLogo: false
 
   footer:
-    displayCopyright: false
+    displayCopyright: true
     displayPoweredBy: false
+    width: normal
 
   imageZoom:
     enable: true
