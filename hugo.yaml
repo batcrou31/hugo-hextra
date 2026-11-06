@@ -37,7 +37,7 @@ menu:
       weight: 2
     - identifier: linux
       name: Linux
-      pageRef: /linux
+      pageRef: /linux/debian
       weight: 2
       params:
         type: link
