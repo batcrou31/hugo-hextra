@@ -1,8 +1,0 @@
-{{ if .IsHome }}
-  <div class="text-xs text-neutral-500 dark:text-neutral-400 mt-4 text-center">
-    Dernière mise à jour globale du site : 
-    <span class="font-medium text-neutral-700 dark:text-neutral-300">
-      {{ .Site.Lastmod | time.Format ":date_long" }}
-    </span>
-  </div>
-{{ end }}
