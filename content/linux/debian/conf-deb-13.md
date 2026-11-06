@@ -1,7 +1,4 @@
----
-title: Debian 13
----
-
+# Debian 13
 ## __1 - Configuration Réseau__
 ### Ajout d'une IP fixe
 Pour modifier le fichier « interfaces », il faut effectuer la commande suivante :  
