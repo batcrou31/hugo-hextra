@@ -8,9 +8,9 @@ layout: wide
 
 {{< cards >}}
   {{< card
-        link="/hugo-extra/debian/conf_debian_13/"
+        link="/"
         title="Configuration debian 13"
-        image="https://imgur.com/a/ocUa25c"
+        image="/images/cover-deb-13.png"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
 
