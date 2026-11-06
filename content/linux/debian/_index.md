@@ -6,7 +6,7 @@ cascade:
 
 ## __1 - Configuration Réseau__
 ### Ajout d'une IP fixe
-Pour modifier le fichier « interfaces », il faut effectuer la commande :  
+Pour modifier le fichier « interfaces », il faut effectuer la commande suivante :  
 
 ```
 nano /etc/network/interfaces 
