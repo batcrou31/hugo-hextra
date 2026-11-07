@@ -22,10 +22,12 @@ params:
 {{< /hextra/hero-subtitle >}}
 </div>
 
+{{< hextra/feature-grid cols="2" >}}
 {{< cards cols="2" >}}
   {{< card link="CV.pdf" title="Mon CV" icon="academic-cap" >}}
   {{< card link="about" title="À propos" icon="question-mark-circle" >}}
 {{< /cards >}}
+{{< /hextra/feature-grid >}}
 
 <div class="hx:mt-6"></div>
 
