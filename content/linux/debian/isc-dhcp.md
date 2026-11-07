@@ -29,7 +29,7 @@ Modifiez la valeur `eth0` selon le nom votre carte réseau :
 INTERFACESv4="eth0"
 ```  
 
-> [!TIP]
+> [!TIP]+ Aide
 > Commande pour afficher la configuration de l'interface.
 > 
 > ```
