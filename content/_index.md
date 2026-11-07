@@ -14,20 +14,18 @@ layout: hextra-home
 {{< /hextra/hero-headline >}}
 </div>
 
-<div class="hx:mb-12">
+<div class="hx:mb-6">
 {{< hextra/hero-subtitle >}}
   Étudiant en BTS CIEL au Lycée International&nbsp;<br class="hx:sm:block hx:hidden" />Victor Hugo de Colomiers
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hx:mt-6 hx:mb-6">
 {{< hextra/feature-grid cols="2" >}}
 {{< cards cols="2" >}}
   {{< card link="CV.pdf" title="Mon CV" icon="academic-cap" >}}
   {{< card link="about" title="À propos" icon="question-mark-circle" >}}
 {{< /cards >}}
 {{< /hextra/feature-grid >}}
-</div>
 
 <div class="hx:mt-6"></div>
 
