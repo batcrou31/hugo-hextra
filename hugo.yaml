@@ -79,21 +79,12 @@ params:
     displayPoweredBy: false
     width: wide
     links:
-      - title: Bluesky
-        url: "https://bsky.app/profile/golangci-lint.run"
-        icon: bluesky
-      - title: Mastodon
-        url: "https://fosstodon.org/@golangcilint"
-        icon: mastodon
-      - title: Twitter
-        url: "https://twitter.com/golangci"
-        icon: twitter
-      - title: Slack
-        url: "https://gophers.slack.com/archives/CS0TBRKPC"
-        icon: slack
-      - title: GitHub
-        url: "https://github.com/golangci/golangci-lint"
-        icon: github
+      - title: Linkedin
+        url: "https://www.linkedin.com/in/baptiste-crouvizier-8485a43b0 "
+        icon: linkedin
+      - title: Discord
+        url: "https://discord.com/users/925729438790995998"
+        icon: discord
 
   imageZoom:
     enable: true
