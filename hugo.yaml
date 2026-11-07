@@ -55,9 +55,9 @@ menu:
       params:
         type: search
     - name: Theme Toggle
+      weight: 6
       params:
         type: theme-toggle
-        label: true
 
 # Parse Git commit
 enableGitInfo: true
@@ -77,6 +77,22 @@ params:
     displayCopyright: true
     displayPoweredBy: false
     width: normal
+    links:
+      - title: Bluesky
+        url: "https://bsky.app/profile/golangci-lint.run"
+        icon: bluesky
+      - title: Mastodon
+        url: "https://fosstodon.org/@golangcilint"
+        icon: mastodon
+      - title: Twitter
+        url: "https://twitter.com/golangci"
+        icon: twitter
+      - title: Slack
+        url: "https://gophers.slack.com/archives/CS0TBRKPC"
+        icon: slack
+      - title: GitHub
+        url: "https://github.com/golangci/golangci-lint"
+        icon: github
 
   imageZoom:
     enable: true
