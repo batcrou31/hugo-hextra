@@ -33,14 +33,14 @@ Lien vers les differents tuto :
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card
-    icon="simple:hugo"
+    icon="desktop-computer"
     link="administration-systeme"
     title="Administration Système"
     subtitle="Création de supports USB bootables, automatisation de l’installation de logiciels et configuration de Windows 10/11."
   >}}
 
   {{< hextra/feature-card
-    icon="simple:hugo"
+    icon="terminal"
     link="linux/debian"
     title="Debian"
     subtitle="Configuration de base (IP, SSH, Dépots de mise à jour etc..), installation et configuration de divers services tel que isc-dhcp, wireguard, FOG etc..."
