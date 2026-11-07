@@ -20,21 +20,21 @@ defaultContentLanguage: fr
 
 menu:
   main:
-    # --- Microsoft ---
+    # Microsoft
     - identifier: windows
       name: "Windows"
       weight: 1
       params:
         type: menu
     - name: "Windows Serveur 2025"
-      pageRef: /windows-serveur
+      pageRef: /windows-serveur/serv-2025/
       parent: windows
       weight: 1
     - name: "Administration système"
       pageRef: /administration-systeme
       parent: windows
       weight: 2
-    # --- Linux ---
+    # Linux
     - identifier: linux
       name: "Linux"
       weight: 2
@@ -44,18 +44,16 @@ menu:
       pageRef: /linux/debian
       parent: linux
       weight: 1
+    # Autres
     - name: "À propos"
       pageRef: /about
       weight: 3
-    - name: Contact ↗
-      url: "https://github.com/imfing"
-      weight: 4
     - name: Search
-      weight: 5
+      weight: 4
       params:
         type: search
     - name: Theme Toggle
-      weight: 6
+      weight: 5
       params:
         type: theme-toggle
 
@@ -94,10 +92,3 @@ params:
   editURL:
     enable: true
     base: "https://github.com/batcrou31/hugo-hextra/edit/main/content"
-
-frontmatter:
-  lastmod:
-    - :git
-    - lastmod
-    - date
-    - publishDate
