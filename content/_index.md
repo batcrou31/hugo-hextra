@@ -20,7 +20,7 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hx:mt-8"></div>
+<div class="hx:mt-3"></div>
 
 {{< hextra/feature-grid cols="2" >}}
 {{< cards cols="2" >}}
