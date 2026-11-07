@@ -6,8 +6,8 @@ sidebar:
 
 [ISC-DHCP](https://www.isc.org/dhcp/) est un serveur DHCP (Dynamic Host Configuration Protocol) permettant l'attribution des adresses IP ainsi que des paramètres de configuration aux équipements d'un réseau.
 
-{{< callout >}}
-  Effectuez le tuto suivant avant de passer à la suite : [Configuration de Debian 13](conf-deb-13)
+{{< callout type="warning" >}}
+  Effectuez le tuto suivant avant de passer à la suite : [Configuration de Debian 13](../conf-deb-13)
 {{< /callout >}}
 
 ## Installation du service
