@@ -14,9 +14,7 @@ sidebar:
 
 - Un __Serveur DHCP__ (si vous ne souhaitez pas utiliser celui de FOG, voir tuto [ISC-DHCP](../isc-dhcp)) 
 
-## Installation de FOG
-
-### Téléchargement/décompression du package
+## Téléchargement/décompression du package
 
 Naviguez dans l'emplacement de votre choix, par exemple le répertoire `home` :
 
@@ -36,7 +34,7 @@ Décompréssion du package :
 tar -xzvf stable.tar.gz
 ```
 
-### Installation de FOG
+## Installation
 
 Lancement du script d'installation :
 
@@ -94,7 +92,7 @@ Une fois l'installation terminée, il reste plus qu'à se connecter avec les ide
 
 ![](/images/debian/fog/FOG-7.png)
 
-## Configuration de FOG
+## Configuration
 
 ### Création d'un utilisateur
 Pour créer un nouvelle utilisateur, il faut se diriger dans : `User > Create New User`.
@@ -117,7 +115,7 @@ Ensuite, il faut associer l'image créer à la machine :
 ![](/images/debian/fog/FOG-IMG2.png)
 ![](/images/debian/fog/FOG-IMG3.png)
 
-## 4 Sources
+## Sources
 
 - <a href="https://docs.fogproject.org/en/latest/" target="_blank" rel="noopener noreferrer">docs.fogproject.org</a>
 - <a href="https://docs.fogproject.org/en/1.5.9/" target="_blank" rel="noopener noreferrer">docs.fogproject.org (old)</a>
