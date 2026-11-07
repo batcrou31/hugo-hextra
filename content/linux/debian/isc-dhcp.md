@@ -12,20 +12,20 @@ sidebar:
 
 ## Installation du service
 
-```
+``` bash
 apt update && apt install isc-dhcp-server -y
 ```
 
-## 2 - Configuration
+## Configuration
 ### Modification de l'interface réseau
 
-Modification de l'interface réseau :
+Configuration de l'interface réseau pour le service :
 
-```
+``` bash
 nano /etc/default/isc-dhcp-server
 ```
 Modifiez la valeur `eth0` selon le nom votre carte réseau :
-```
+``` bash
 INTERFACESv4="eth0"
 ```  
 
@@ -36,16 +36,11 @@ INTERFACESv4="eth0"
 > cat /etc/network/interfaces
 > ```
 
-{{< details title="Afficher la configuration de la carte réseau" closed="true" >}}
-
-```
-cat /etc/network/interfaces
-```
-
-{{< /details >}}
-
 ### Configuration du serveur DHCP
-```
+
+Modification du fichier de configuration :  
+
+``` bash
 nano /etc/dhcp/dhcpd.conf
 ```
 Exemple de configuration de base :
@@ -73,7 +68,7 @@ Exemple de configuration pour [FOG](https://fogproject.org/) (UEFI + BIOS):
 default-lease-time 86400;       # 24h
 max-lease-time 172800;          # 48h
 ddns-update-style standard;
-next-server 192.168.1.20;       # Adresse de votre serveur TFTP
+next-server 192.168.1.20;       # Adresse du serveur TFTP (serveur FOG)
 authoritative;
 
 # Déclaration du sous-réseau
@@ -81,7 +76,7 @@ subnet 192.168.1.0 netmask 255.255.255.0 {            # Adresse du réseau/masqu
   range 192.168.1.101 192.168.1.199;                  # Adresse de début/fin
   option routers 192.168.1.254;                       # Adresse du routeur
   option domain-name-servers 192.168.1.254, 8.8.8.8;  # Adresse du/des serveurs de noms
-  option domain-name "home";
+  option domain-name "home";                          # Domaine
 
   class "UEFI-32-1" {
   match if substring(option vendor-class-identifier, 0, 20) = "PXEClient:Arch:00006";
@@ -119,13 +114,14 @@ subnet 192.168.1.0 netmask 255.255.255.0 {            # Adresse du réseau/masqu
 ### Modification du service ISC-DHCP
 
 Ajout du redémarage automatique du service :
-```
+
+``` bash
 systemctl enable isc-dhcp-server
 systemctl stop isc-dhcp-server
 systemctl edit --full isc-dhcp-server
 ```
 
-Ajouter la valeur suivante haut dessus de la partie `[Unit]`:
+Ajouter les valeurs suivantes au-dessus de la section `[Unit]`:
 
 ``` bash
 [Install]
@@ -140,7 +136,7 @@ Exemple :
 ``` bash
 [Service]
 Type=forking
-Restart=on-failure
+Restart=always
 RestartSec=60s
 TimeoutSec=5min
 IgnoreSIGPIPE=no
@@ -158,19 +154,19 @@ systemctl daemon-reload
 systemctl enable isc-dhcp-server
 systemctl start isc-dhcp-server
 ```
-!!! note "Information importante"
-    Commande pour vérifier l'état du service :
-    ```
-    systemctl is-enabled isc-dhcp-server
-    systemctl status isc-dhcp-server
-    ```
 
-## 3 - Commandes utiles
-```
+> [!TIP]+ Aide
+> Commande pour vérifier l'état du service :
+>
+> ```
+> systemctl is-enabled isc-dhcp-server
+> systemctl status isc-dhcp-server
+> ```
+
+## Commandes utiles
+``` bash
 systemctl start isc-dhcp-server
 systemctl stop isc-dhcp-server
 systemctl restart isc-dhcp-server
 systemctl status isc-dhcp-server
 ```
-
----
