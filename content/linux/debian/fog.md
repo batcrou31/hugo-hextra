@@ -62,7 +62,7 @@ Sélectionner `N` si vous ne souhaitais pas configurer votre carte réseau :
 Configuration du serveur DHCP de FOG :
 
 > [!NOTE]
-> Si vous ne souhaitez pas utiliser le server DHCP de FOG, sélectionner `N` à toute les questions suivante.
+> Si vous ne souhaitez pas utiliser le server DHCP de FOG, sélectionner `N` pour les 3 questions suivante.
 
 ![](/images/debian/fog/FOG-4.png)
 
@@ -80,11 +80,6 @@ Sommaire de la configuration éfectué précedement :
 
 Pendant l'installation, il faut se connecter à l'interface web de fog :
 
-> [!NOTE]+ Aide
-> ```
-> http://<adresse_serv_fog>/fog/management
-> ```  
-
 ![](/images/debian/fog/FOG-DB1.png)
 
 puis, il faut sélectionner `Install/Update Now` afin de finaliser l'installation de la base de donnée.
@@ -95,14 +90,11 @@ Une fois redirigé sur la page de conexion, il faut revenir dans votre terminal 
 
 ![](/images/debian/fog/FOG-LOG.png)
 
-Une fois l'installation terminée, il reste plus qu'à se connecter avec les identifiants suivant :
-
-- Username : `fog`
-- Password : `password`
+Une fois l'installation terminée, il reste plus qu'à se connecter avec les identifiants par défauts :
 
 ![](/images/debian/fog/FOG-7.png)
 
-## 3 - Configuration de FOG
+## Configuration de FOG
 
 ### Création d'un utilisateur
 Pour créer un nouvelle utilisateur, il faut se diriger dans : `User > Create New User`.
@@ -125,7 +117,7 @@ Ensuite, il faut associer l'image créer à la machine :
 ![](/images/debian/fog/FOG-IMG2.png)
 ![](/images/debian/fog/FOG-IMG3.png)
 
-## 4 - Sources
+## 4 Sources
 
 - <a href="https://docs.fogproject.org/en/latest/" target="_blank" rel="noopener noreferrer">docs.fogproject.org</a>
 - <a href="https://docs.fogproject.org/en/1.5.9/" target="_blank" rel="noopener noreferrer">docs.fogproject.org (old)</a>
