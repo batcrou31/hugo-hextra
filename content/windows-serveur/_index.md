@@ -1,5 +1,5 @@
 ---
-title: Serveur 2025
+title: Windows Serveur 2025
 ---
 
 ## Divers
