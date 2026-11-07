@@ -20,15 +20,7 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<!-- <div class="hx:mb-6">
-{{< hextra/hero-button text="Mon CV" link="CV.pdf" >}}
-</div>
-
-<div class="hx:mb-6">
-{{< hextra/hero-button text="À propos" link="CV.pdf" >}}
-</div> -->
-
-{{< cards cols="2" >}}
+{{< cards cols="3" >}}
   {{< card link="CV.pdf" title="Mon CV" icon="academic-cap" >}}
   {{< card link="about" title="À propos" icon="question-mark-circle" >}}
 {{< /cards >}}
