@@ -20,14 +20,14 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hx:mt-3"></div>
-
+<div class="hx:mt-6 hx:mb-6">
 {{< hextra/feature-grid cols="2" >}}
 {{< cards cols="2" >}}
   {{< card link="CV.pdf" title="Mon CV" icon="academic-cap" >}}
   {{< card link="about" title="À propos" icon="question-mark-circle" >}}
 {{< /cards >}}
 {{< /hextra/feature-grid >}}
+</div>
 
 <div class="hx:mt-6"></div>
 
