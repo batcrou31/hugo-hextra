@@ -1,6 +1,8 @@
 ---
 title: Acceuil
 layout: hextra-home
+params:
+  width: wide
 ---
 
 {{< hextra/hero-badge >}}
@@ -20,12 +22,10 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hx:mb-10">
 {{< cards cols="2" >}}
   {{< card link="CV.pdf" title="Mon CV" icon="academic-cap" >}}
   {{< card link="about" title="À propos" icon="question-mark-circle" >}}
 {{< /cards >}}
-</div>
 
 <div class="hx:mt-6"></div>
 
