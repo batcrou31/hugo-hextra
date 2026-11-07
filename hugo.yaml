@@ -65,7 +65,7 @@ enableGitInfo: true
 params:
   # Display the last modification date
   displayUpdatedDate: true
-  dateFormat: "2 Jan 2006"
+  dateFormat: "2 January 2006"
   # Display the author of the last modification
   displayUpdatedAuthor: false
 
