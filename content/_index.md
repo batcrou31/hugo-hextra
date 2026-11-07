@@ -1,8 +1,6 @@
 ---
 title: Acceuil
 layout: hextra-home
-params:
-  width: wide
 ---
 
 {{< hextra/hero-badge >}}
@@ -21,6 +19,8 @@ params:
   Étudiant en BTS CIEL au Lycée International&nbsp;<br class="hx:sm:block hx:hidden" />Victor Hugo de Colomiers
 {{< /hextra/hero-subtitle >}}
 </div>
+
+<div class="hx:mt-8"></div>
 
 {{< hextra/feature-grid cols="2" >}}
 {{< cards cols="2" >}}
