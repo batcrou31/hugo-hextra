@@ -1,10 +1,19 @@
 ---
-title: "Configuration Debian 13"
+title: "Configuration de Debian 13"
 sidebar:
   hide: true
 ---
 
-## __1 - Configuration Réseau__
+## Présentation
+
+[Debian](https://www.debian.org/) est une distribution Linux libre, stable et sécurisée, reconnue pour sa fiabilité et adaptée aussi bien aux serveurs qu'aux ordinateurs de bureau.
+
+## Ressources Utiles
+
+- ISO de **Debian 13** : https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-13.7.0-amd64-DVD-1.iso
+- Outil de création de **clé démarrable** : https://rufus.ie/fr/
+
+## Configuration Réseau
 ### Ajout d'une IP fixe
 Pour modifier le fichier « interfaces », il faut effectuer la commande suivante :  
 
@@ -26,7 +35,7 @@ Afin que les modifications soit prise en compte, il faut redémarer le service r
 systemctl restart networking.service
 ```
 
-## __2 - Ajout des dépôts de mise à jour__ 
+## Ajout des dépôts de mise à jour
 Tout d'abord, il faut créer un nouveau dépôt :
 ```
 nano /etc/apt/sources.list.d/debian.sources
@@ -83,7 +92,7 @@ nano /etc/apt/sources.list
 il faut rajouter un `#` avant le `deb cdrom:` :  
 
 
-## __3 - Création de certificat SSH__
+## Création de certificat SSH
 Pour génerer un certificat, il faut d'abord ouvrir le Terminal en Administrateur dans Windows puis se déplacer dans le répertoire suivant :
 ```
 cd .ssh 
@@ -125,7 +134,7 @@ Pour finir, vous pouvez maintenant vous conecter en SSH sur vos machine sans mot
 ssh test
 ```
 
-## __4 - Divers__
+## Divers
 ### Authentification du SSH avec l'utilisateur `root`
 
 ```
@@ -161,6 +170,3 @@ Activer le démarage auto du service :
 ```
 systemctl enable qemu-guest-agent
 ```
-
----
-

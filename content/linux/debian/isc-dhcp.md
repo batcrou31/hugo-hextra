@@ -1,5 +1,5 @@
 ---
-title: "ISC-DHCP"
+title: "Installation et configuration du service ISC-DHCP"
 sidebar:
   hide: true
 ---
