@@ -1,7 +1,7 @@
 # Hugo configuration file
 title: batcrou.fr
 
-baseURL = "https://doc.batcrou.ovh/"
+baseURL: "https://doc.batcrou.ovh/"
 
 # import hextra as module
 module:
