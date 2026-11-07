@@ -27,9 +27,13 @@ layout: hextra-home
 {{< /cards >}}
 {{< /hextra/feature-grid >}}  
 
-<div class="hx:mt-6 hx:mb-6"></div>
+<div class="hx:mb-6"></div>
 
-Lien vers les differents tuto :  
+<div class="hx:mb-6">
+{{< hextra/hero-subtitle >}}
+  Lien vers les differents tuto :
+{{< /hextra/hero-subtitle >}}
+</div>
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card
