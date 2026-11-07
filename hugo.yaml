@@ -56,10 +56,9 @@ menu:
       params:
         type: search
     - name: Theme Toggle
-      weight: 6
       params:
-      type: theme-toggle
-      label: true
+        type: theme-toggle
+        label: true
 
 # Parse Git commit
 enableGitInfo: true
