@@ -22,7 +22,7 @@ nano /etc/network/interfaces
 ```
 Contenu du fichier interfaces :  
 
-Il sufit de changer le mode "dhcp" en "static" puis d'ajouter :  
+Il sufit de changer le mode `dhcp` en `static` puis d'ajouter :  
 
 ```
 address <adresse>/<masque>
@@ -108,7 +108,7 @@ Il faut ensuite spécifier :
 - le nom (test_rsa)
 - la passphrase (optionel)
 
-Ensuite, sur la machine linux il faut aller dans le dossier ".ssh" :
+Ensuite, sur la machine linux il faut aller dans le dossier `.ssh` :
 ```
 cd .ssh 
 ```
@@ -116,11 +116,11 @@ ou si le dossier n'existe pas :
 ```
 mkdir .ssh 
 ```
-puis créer un fichier nommé "authorized_keys" et coller tout le contenu du fichier "test.pub" créer précédament :
+puis créer un fichier nommé `authorized_keys` et coller tout le contenu du fichier `test.pub` créer précédament :
 ```
 nano authorized_keys
 ```
-Il faut ensuite retourner dans le dossier ".ssh" sur l'hôte Windows et créer un fichier "config"  
+Il faut ensuite retourner dans le dossier `.ssh` sur l'hôte Windows et créer un fichier `config`  
 
 Contenu du fichier :
 ```
