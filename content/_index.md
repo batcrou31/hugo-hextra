@@ -5,7 +5,7 @@ layout: hextra-home
 
 {{< hextra/hero-badge >}}
   <div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
-  <span>Dernière mise à jour du site le : 08/11/2026.</span>
+  <span>Dernière mise à jour du site le : 08/11/2026</span>
 {{< /hextra/hero-badge >}}
 
 <div class="hx:mt-6 hx:mb-6">
@@ -25,30 +25,25 @@ layout: hextra-home
   {{< card link="CV.pdf" title="Mon CV" icon="academic-cap" >}}
   {{< card link="about" title="À propos" icon="question-mark-circle" >}}
 {{< /cards >}}
-{{< /hextra/feature-grid >}}
+{{< /hextra/feature-grid >}}  
 
-<div class="hx:mt-6"></div>
+<div class="hx:mt-6 hx:mb-6"></div>
+
+Lien vers les differents tuto :  
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card
-    title="Lightweight as a Feather"
-    subtitle="No dependency or Node.js is needed to use Hextra. Powered by Hugo, one of *the fastest* static site generators, building your site in just seconds with a single binary."
+    icon="tabler:brand-windows"
+    link="administration-systeme"
+    title="Administration Système"
+    subtitle="Création de supports USB bootables, automatisation de l’installation de logiciels et configuration de Windows 10/11."
   >}}
+
   {{< hextra/feature-card
-    title="Responsive with Dark Mode Included"
-    subtitle="Looks great on different screen sizes. Built-in dark mode support, with auto-switching based on user's system preference."
+    icon="tabler:brand-debian"
+    link="linux/debian"
+    title="Debian"
+    subtitle="Configuration de base (IP, SSH, Dépots de mise à jour etc..), installation et configuration de divers services tel que isc-dhcp, wireguard, FOG etc..."
   >}}
-  {{< hextra/feature-card
-    title="Build and Host for Free"
-    subtitle="Build with GitHub Actions, and host for free on GitHub Pages. Alternatively it can be hosted on any static hosting service."
-  >}}
-  {{< hextra/feature-card
-    title="Multi-Language Made Easy"
-    subtitle="Create multi-language pages by just adding locales suffix to the Markdown file. Adding i18n support to your site is intuitive."
-  >}}
-  {{< hextra/feature-card
-    title="And Much More..."
-    icon="sparkles"
-    subtitle="Syntax highlighting / Table of contents / SEO / RSS / LaTeX / Mermaid / Customizable / and more..."
-  >}}
+
 {{< /hextra/feature-grid >}}
