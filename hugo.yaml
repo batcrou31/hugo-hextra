@@ -27,7 +27,7 @@ menu:
       params:
         type: menu
     - name: "Windows Serveur 2025"
-      pageRef: /windows-serveur/serveur-2025/
+      pageRef: /windows-serveur
       parent: windows
       weight: 1
     - name: "Administration système"
