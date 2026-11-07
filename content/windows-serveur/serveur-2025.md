@@ -1,5 +1,7 @@
 ---
 title: Serveur 2025
+date: "2023-02-28"
+lastmod: "2023-03-01"
 ---
 
 ## Divers
