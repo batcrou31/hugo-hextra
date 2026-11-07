@@ -17,7 +17,7 @@ apt update && apt install isc-dhcp-server -y
 ```
 
 ## Configuration
-### Modification de l'interface réseau
+### Modification de l'interface
 
 Configuration de l'interface réseau pour le service :
 
@@ -36,7 +36,7 @@ INTERFACESv4="eth0"
 > cat /etc/network/interfaces
 > ```
 
-### Configuration du serveur DHCP
+### Configuration du serveur
 
 Modification du fichier de configuration :  
 
@@ -111,7 +111,7 @@ subnet 192.168.1.0 netmask 255.255.255.0 {            # Adresse du réseau/masqu
 }
 ```
 
-### Modification du service ISC-DHCP
+### Modification du service
 
 Ajout du redémarage automatique du service :
 
