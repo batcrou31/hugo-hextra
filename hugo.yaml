@@ -96,12 +96,8 @@ params:
     base: "https://github.com/batcrou31/hugo-hextra/edit/main/content"
 
 frontmatter:
-  date:
-    - date
-    - publishDate
-    - lastmod
   lastmod:
-    - lastmod
     - :git
+    - lastmod
     - date
     - publishDate
