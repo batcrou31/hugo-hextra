@@ -3,6 +3,8 @@ title: Acceuil
 layout: hextra-home
 ---
 
+Last Updated: {{ $lastmod }}
+
 {{< hextra/hero-badge >}}
   <div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
   <span>Dernière mise à jour le : .</span>
