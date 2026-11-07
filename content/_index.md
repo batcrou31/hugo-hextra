@@ -5,7 +5,7 @@ layout: hextra-home
 
 {{< hextra/hero-badge >}}
   <div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
-  <span>Dernière mise à jour le : **08/11/2026**.</span>
+  <span>Dernière mise à jour du site le : 08/11/2026.</span>
 {{< /hextra/hero-badge >}}
 
 <div class="hx:mt-6 hx:mb-6">
@@ -16,7 +16,7 @@ layout: hextra-home
 
 <div class="hx:mb-12">
 {{< hextra/hero-subtitle >}}
-  Étudiant en BTS CIEL au&nbsp;<br class="hx:sm:block hx:hidden" />Lycée International Victor Hugo de Colomiers
+  Étudiant en BTS CIEL au Lycée International&nbsp;<br class="hx:sm:block hx:hidden" />Victor Hugo de Colomiers
 {{< /hextra/hero-subtitle >}}
 </div>
 
