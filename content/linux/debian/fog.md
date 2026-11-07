@@ -12,7 +12,7 @@ sidebar:
 
 ## Prérequis
 
-- Un __Serveur DHCP__ (si vous ne souhaitez pas utiliser celui de FOG) [ISC-DHCP](../isc-dhcp)
+- Un __Serveur DHCP__ (si vous ne souhaitez pas utiliser celui de FOG, voir tuto [ISC-DHCP](../isc-dhcp)) 
 
 ## Installation de FOG
 
@@ -53,105 +53,77 @@ Sélectionner votre distribution Linux :
 
 Sélectionner `N` pour une installation normale de FOG :
 
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-2.png){ width="700" }
-</figure>
+![](/images/debian/fog/FOG-2.png)
 
 Sélectionner `N` si vous ne souhaitais pas configurer votre carte réseau :
 
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-3.png){ width="700" }
-</figure>
+![](/images/debian/fog/FOG-3.png)
 
 Configuration du serveur DHCP de FOG :
 
-!!! info "Information"
-    Si vous ne souhaitez pas utiliser le server DHCP de FOG, sélectionner `N` à toute les questions suivante.
+> [!NOTE]
+> Si vous ne souhaitez pas utiliser le server DHCP de FOG, sélectionner `N` à toute les questions suivante.
 
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-4.png){ width="700" }
-</figure>
+![](/images/debian/fog/FOG-4.png)
 
 Sélectionner `Y` afin de pouvoir mettre en francais l'interface web :
 
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-5.png){ width="700" }
-</figure>
+![](/images/debian/fog/FOG-5.png)
 
 Sélectionner `N` si vous ne souhaitais pas avtiver le protocle HTTPS pour l'interface web :
 
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-5-2.png){ width="700" }
-</figure>
+![](/images/debian/fog/FOG-5-2.png)
 
 Sommaire de la configuration éfectué précedement :
 
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-6.png){ width="500" }
-</figure>
+![](/images/debian/fog/FOG-6.png)
 
 Pendant l'installation, il faut se connecter à l'interface web de fog :
 
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-DB1.png){ width="700" }
-</figure>
+> [!NOTE]+ Aide
+> ```
+> http://<adresse_serv_fog>/fog/management
+> ```  
 
-```
-http://<adresse_serv_fog>/fog/management
-```
-puis, il faut sélectionner `Install/Update Now` afin de finaliser l'installation de la base de donné.
+![](/images/debian/fog/FOG-DB1.png)
 
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-DB_2.png){ width="800" }
-</figure>
+puis, il faut sélectionner `Install/Update Now` afin de finaliser l'installation de la base de donnée.
+
+![](/images/debian/fog/FOG-DB_2.png)
 
 Une fois redirigé sur la page de conexion, il faut revenir dans votre terminal et faire la touche `Entrée`.
 
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-LOG.png){ width="500" }
-</figure>
+![](/images/debian/fog/FOG-LOG.png)
 
-Une fois l'installation terminé, il reste plus qu'a se connecter avec les identifiants suivant :
+Une fois l'installation terminée, il reste plus qu'à se connecter avec les identifiants suivant :
 
 - Username : `fog`
 - Password : `password`
 
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-7.png){ width="500" }
-</figure>
+![](/images/debian/fog/FOG-7.png)
 
 ## 3 - Configuration de FOG
 
 ### Création d'un utilisateur
-Pour créer un nouvelle utilisateur, il faut se diriger dans l'onglet `User > Create New User`.
+Pour créer un nouvelle utilisateur, il faut se diriger dans : `User > Create New User`.
 
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-USER1.png){ width="700" }
-</figure>
+![](/images/debian/fog/FOG-USER1.png)
 
 ### Enregistrement d'une machine
-Pour enregistrer une nouvelle machine, il vous sufit de démarer en réseau (Généralement `F12`) et de sélectionner `Quick registration and inventory`.  
+Pour enregistrer une nouvelle machine, il vous sufit de démarer sur le réseau (Généralement `F12`) et de sélectionner `Quick registration and inventory`.  
 
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-REG2.png){ width="700" }
-</figure>
+![](/images/debian/fog/FOG-REG2.png)
 
-Une fois que la machine à redémarer vous pouvez l'éteindre. 
+Une fois que la machine à redémarer vous pouvez l'éteindre.  
 
-Pour enregistrer l'image, il vous faut aller dans l'onglet `Image Management -> Create New Image`. Puis modifier les valeurs selon le système d'exploitation.
+Pour enregistrer l'image, il vous sufit d'aller dans : `Image Management -> Create New Image`. Puis modifier les valeurs selon le système d'exploitation.
 
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-IMG.png){ width="600" }
-</figure>
+![](/images/debian/fog/FOG-IMG.png)
 
 Ensuite, il faut associer l'image créer à la machine :
 
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-IMG2.png){ width="600" }
-</figure>
-<figure markdown="span">
-  ![Image title](../assets/linux/fog/FOG-IMG3.png){ width="600" }
-</figure>
+![](/images/debian/fog/FOG-IMG2.png)
+![](/images/debian/fog/FOG-IMG3.png)
 
 ## 4 - Sources
 
