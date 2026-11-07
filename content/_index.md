@@ -40,7 +40,7 @@ Lien vers les differents tuto :
   >}}
 
   {{< hextra/feature-card
-    <!-- icon="tabler:debian" -->
+    icon="simple:hugo"
     link="linux/debian"
     title="Debian"
     subtitle="Configuration de base (IP, SSH, Dépots de mise à jour etc..), installation et configuration de divers services tel que isc-dhcp, wireguard, FOG etc..."
