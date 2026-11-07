@@ -1,5 +1,7 @@
 ---
-title: "Debian 13"
+title: "Configuration Debian 13"
+sidebar:
+  hide: true
 ---
 
 ## __1 - Configuration Réseau__

@@ -94,3 +94,20 @@ params:
   editURL:
     enable: true
     base: "https://github.com/batcrou31/hugo-hextra/edit/main/content"
+
+  page:
+    # full (100%), wide (90rem), normal (80rem)
+    width: full
+    tabs:
+      sync: false
+
+frontmatter:
+  date:
+    - date
+    - publishDate
+    - lastmod
+  lastmod:
+    - lastmod
+    - :git
+    - date
+    - publishDate
