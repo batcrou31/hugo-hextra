@@ -74,9 +74,10 @@ params:
     displayLogo: false
 
   footer:
+    enable: true
     displayCopyright: true
     displayPoweredBy: false
-    width: normal
+    width: wide
     links:
       - title: Bluesky
         url: "https://bsky.app/profile/golangci-lint.run"
