@@ -29,6 +29,13 @@ Modifiez la valeur `eth0` selon le nom votre carte réseau :
 INTERFACESv4="eth0"
 ```  
 
+> [!TIP]
+> Commande pour afficher la configuration de l'interface.
+> 
+> ```
+> cat /etc/network/interfaces
+> ```
+
 {{< details title="Afficher la configuration de la carte réseau" closed="true" >}}
 
 ```
