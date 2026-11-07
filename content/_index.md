@@ -28,7 +28,7 @@ layout: hextra-home
 {{< hextra/hero-button text="À propos" link="CV.pdf" >}}
 </div> -->
 
-{{< cards >}}
+{{< cards cols="2" >}}
   {{< card link="CV.pdf" title="Mon CV" icon="academic-cap" >}}
   {{< card link="about" title="À propos" icon="question-mark-circle" >}}
 {{< /cards >}}
