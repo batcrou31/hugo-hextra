@@ -25,6 +25,11 @@ layout: hextra-home
   {{< card link="about" title="À propos" icon="question-mark-circle" >}}
 {{< /cards >}}
 
+{{< cards cols="2" >}}
+  {{< card link="/" title="Left Card" >}}
+  {{< card link="/" title="Right Card" >}}
+{{< /cards >}}
+
 <div class="hx:mt-6"></div>
 
 {{< hextra/feature-grid >}}
