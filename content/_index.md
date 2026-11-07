@@ -21,7 +21,7 @@ layout: hextra-home
 </div>
 
 <div class="hx:mb-6">
-{{< hextra/hero-button text="Mon CV" link="CV.pdf" >}}
+{{< hextra/hero-button text="Mon CV" link="CV.pdf" target="_blank" rel="noopener noreferrer">}}
 </div>
 
 <div class="hx:mt-6"></div>
