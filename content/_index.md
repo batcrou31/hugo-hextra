@@ -8,6 +8,8 @@ layout: hextra-home
   <span>Dernière mise à jour du site le : 08/11/2026</span>
 {{< /hextra/hero-badge >}}
 
+{{< lastmod >}}
+
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
   Baptiste CROUVIZIER
