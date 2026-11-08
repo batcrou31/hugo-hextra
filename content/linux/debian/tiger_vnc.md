@@ -17,7 +17,7 @@ Mises à jour/installation des paquets de TigerVNC :
 sudo apt update && sudo apt install tigervnc-standalone-server tigervnc-common dbus-x11 -y
 ```
 
-![](/images/debian/tiger_vnc/VNC-1.png)
+![](/images/debian/tiger_vnc/VNC-1.PNG)
 
 ## Configuration
 ### Définition d'un mot de passe VNC
@@ -29,7 +29,7 @@ vncpasswd
 > [!NOTE]
 > Le maximum est de 8 caractères, il est également possible de définir un mot de passe pour l'affichage en lecture seule.
 
-![](/images/debian/tiger_vnc/VNC-2.png)
+![](/images/debian/tiger_vnc/VNC-2.PNG)
 
 ### Configuration du lancement Xfce dans TigerVNC
 Création/édition du fichier `xstartup` :
@@ -68,22 +68,22 @@ Dans le client VNC de votre choix, entrez l'adresse IP ainsi que l'identifiant (
 
 Exemple avec [RealVNC Viewer](https://www.realvnc.com/fr/connect/download/viewer/) :
 
-![](/images/debian/tiger_vnc/VNC-3.png)
+![](/images/debian/tiger_vnc/VNC-3.PNG)
 
 Accepter le message d'avertissement :
 
-![](/images/debian/tiger_vnc/VNC-4.png)
+![](/images/debian/tiger_vnc/VNC-4.PNG)
 
 > [!WARNING]+ Attention
 > VNC n'est pas chiffré par défaut, pour un accès distant via internet vous pouvez utiliser un VPN ou mettre en place un bastion comme [Apache Guacamole](https://guacamole.apache.org/)
 
 Puis, entrez le mot de passe créé précédemment :
 
-![](/images/debian/tiger_vnc/VNC-5.png)
+![](/images/debian/tiger_vnc/VNC-5.PNG)
 
 Résultat dans VNC Viewer : 
 
-![](/images/debian/tiger_vnc/VNC-7.png)
+![](/images/debian/tiger_vnc/VNC-7.PNG)
 
 La commande suivante est pour arrêter le server VNC :
 ``` bash
