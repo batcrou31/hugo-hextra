@@ -4,7 +4,7 @@ layout: hextra-home
 ---
 
 {{< hextra/hero-badge >}}
-  <div class="hx:w-2 hx:h-2 hx:rounded-full" style="background-color: #fbbf24;"></div>
+  <div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
   <span>Dernière mise à jour du site le : 08/11/2026</span>
 {{< /hextra/hero-badge >}}
 
