@@ -6,11 +6,9 @@ sidebar:
 
 ## Accès à l’interface de configuration
 - Brancher le port console sur le port série de votre appareil CISCO,  
-
 - Sur votre ordinateur lancer/installer <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank" rel="noopener noreferrer">Putty</a> avec la configuration suivante :
 
-Diriger la connexion vers le port COM choisi en 1,
-
+- Diriger la connexion vers **le port COM choisi en 1**,
 - Choisir un débit de **9600 bit/s**
 - **8 bits** de données
 - **Pas de parité**
@@ -25,7 +23,7 @@ Enable
 ```
 
 > [!NOTE]
-> pour entrer dans le mode privilégié. La validation de cette commande entraîne souvent la demande d’un mot de passe.
+> Pour entrer dans le mode privilégié. La validation de cette commande entraîne souvent la demande d’un mot de passe.
 
 ## Visualisation des informations de configuration
 ### Commandes courantes  
