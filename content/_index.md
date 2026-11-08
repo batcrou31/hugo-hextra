@@ -28,33 +28,3 @@ layout: hextra-home
 {{< /hextra/feature-grid >}}  
 
 <div class="hx:mb-6"></div>
-
-<div class="hx:mb-6">
-{{< hextra/hero-subtitle >}}
-  Les tutoriels :
-{{< /hextra/hero-subtitle >}}
-</div>
-
-{{< hextra/feature-grid >}}
-  {{< hextra/feature-card
-    icon="desktop-computer"
-    link="administration-systeme"
-    title="Administration système"
-    subtitle="Création de supports USB bootables, installation de logiciel de façon automatique et silencieuse, configuration de Windows 10/11."
-  >}}
-
-  {{< hextra/feature-card
-    icon="terminal"
-    link="linux/debian"
-    title="Debian"
-    subtitle="Configuration de base (IP, SSH, Dépots de mise à jour etc..)."
-  >}}
-
-  {{< hextra/feature-card
-    icon="terminal"
-    link="reseau/cisco/cisco-switch"
-    title="Commutateur Cisco"
-    subtitle="Liste de Commande de base pour la configuration d'un switch Cisco"
-  >}}
-
-{{< /hextra/feature-grid >}}
