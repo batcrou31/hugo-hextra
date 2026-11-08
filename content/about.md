@@ -7,7 +7,6 @@ type: about
 {{< cards cols="2" >}}
   {{< card link="mailto:b.crouvizier@hotmail.com" title="Mail" icon="mail" >}}
   {{< card link="https://discord.com/users/925729438790995998" title="Discord" icon="discord" >}}
-  {{< card link="https://www.linkedin.com/in/baptiste-crouvizier-8485a43b0" title="Linkedin" icon="linkedin" >}}
 {{< /cards >}}
 {{< /hextra/feature-grid >}}  
 
