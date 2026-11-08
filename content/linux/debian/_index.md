@@ -28,4 +28,11 @@ layout: wide
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
 
+  {{< card
+        link="tiger_vnc"
+        title="Installation et configuration de TigerVNC sur un environnement de bureau Xfce"
+        image="/images/debian/cover-tiger_vnc.png"
+        imageStyle="object-fit:cover; aspect-ratio:16/9;"
+  >}}
+
 {{< /cards >}}
