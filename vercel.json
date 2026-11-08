@@ -1,6 +1,13 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "",
-  "buildCommand": "chmod a+x build.sh && ./build.sh",
-  "outputDirectory": "/"
+  "framework": "hugo",
+  "outputDirectory": "public",
+  "buildCommand": "if [ \"$VERCEL_ENV\" = \"production\" ]; then hugo --gc --minify -b \"https://$VERCEL_PROJECT_PRODUCTION_URL\"; else hugo --gc --minify -b \"https://$VERCEL_URL\"; fi",
+  "build": {
+    "env": {
+      "HUGO_VERSION": "0.156.0",
+      "GOTOOLCHAIN": "auto",
+      "GOSUMDB": "sum.golang.org"
+    }
+  }
 }
