@@ -89,6 +89,9 @@ params:
     displayPoweredBy: false
     width: wide
     links:
+      - title: Mail
+        url: "mailto:b.crouvizier@hotmail.com"
+        icon: mail
       - title: Linkedin
         url: "https://www.linkedin.com/in/baptiste-crouvizier-8485a43b0"
         icon: linkedin
