@@ -9,7 +9,7 @@ sidebar:
 ## Ressources Utiles
 
 - ISO de **Debian 13** : https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/
-- Outil de création de **clé démarrable** : https://rufus.ie/ 
+- Outil de création de **clé bootable** : https://rufus.ie/ 
 
 ## Configuration Réseau
 ### Ajout d'une IP fixe
