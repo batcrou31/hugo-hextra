@@ -40,14 +40,21 @@ layout: hextra-home
     icon="desktop-computer"
     link="administration-systeme"
     title="Administration système"
-    subtitle="Création de supports USB bootables, automatisation de l’installation de logiciels et configuration de Windows 10/11."
+    subtitle="Création de supports USB bootables, installation de logiciel de façon automatique et silencieuse, configuration de Windows 10/11."
   >}}
 
   {{< hextra/feature-card
     icon="terminal"
     link="linux/debian"
     title="Debian"
-    subtitle="Configuration de base (IP, SSH, Dépots de mise à jour etc..), installation et configuration de divers services tel que isc-dhcp, wireguard, FOG etc..."
+    subtitle="Configuration de base (IP, SSH, Dépots de mise à jour etc..)."
+  >}}
+
+  {{< hextra/feature-card
+    icon="terminal"
+    link="reseau/cisco/cisco-switch"
+    title="Commutateur Cisco"
+    subtitle="Liste de Commande de base pour la configuration d'un switch Cisco"
   >}}
 
 {{< /hextra/feature-grid >}}
