@@ -2,5 +2,5 @@
 {{ range $dernierePage }}
   {{- $dateFormatee := .Lastmod.Format "02/01/2006" -}}
   
-  {{- template "shortcodes/hextra/hero-badge.html" (dict "context" . "Inner" (printf "<div class=\"hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400\"></div><span>Dernière mise à jour du site le : %s</span>" $dateFormatee)) -}}
+  {{- template "shortcodes/hextra/lastmod.html" (dict "context" . "Inner" (printf "<div class=\"hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400\"></div><span>Dernière mise à jour du site le : %s</span>" $dateFormatee)) -}}
 {{ end }}
