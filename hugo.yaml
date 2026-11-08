@@ -42,11 +42,6 @@ menu:
       weight: 2
       params:
         type: menu
-    - name: "Cisco"
-      parent: reseau
-      weight: 1
-      params:
-        type: menu
     - name: "Commutateur Cisco"
       pageRef: /reseau/cisco/cisco-switch
       parent: reseau
