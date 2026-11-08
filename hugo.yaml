@@ -3,6 +3,10 @@ title: batcrou.fr
 
 baseURL: "https://doc.batcrou.ovh/"
 
+caches:
+  images:
+    dir: :cacheDir/images
+
 # import hextra as module
 module:
   imports:
