@@ -32,7 +32,7 @@ layout: hextra-home
 
 <div class="hx:mb-6">
 {{< hextra/hero-subtitle >}}
-  Lien vers les differents tuto :
+  Les tutoriels :
 {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -40,7 +40,7 @@ layout: hextra-home
   {{< hextra/feature-card
     icon="desktop-computer"
     link="administration-systeme"
-    title="Administration Système"
+    title="Administration système"
     subtitle="Création de supports USB bootables, automatisation de l’installation de logiciels et configuration de Windows 10/11."
   >}}
 
