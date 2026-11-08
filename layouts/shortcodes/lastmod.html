@@ -1,10 +1,4 @@
 {{ $dernierePage := first 1 (sort .Site.RegularPages ".Lastmod" "desc") }}
 {{ range $dernierePage }}
-  <div class="hextra-card mt-4 p-4 border rounded-lg text-sm text-gray-500 dark:text-neutral-400" style="border-color: var(--tw-border-opacity);">
-    <span>Dernière mise à jour globale du site : </span>
-    <strong class="text-gray-900 dark:text-gray-100">
       {{ .Lastmod.Format "02/01/2006" }}
-    </strong>
-    <span class="block text-xs italic mt-1">(Modifié sur la page : <a href="{{ .RelPermalink }}" class="underline text-primary-600">{{ .Title }}</a>)</span>
-  </div>
 {{ end }}
