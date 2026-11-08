@@ -40,10 +40,20 @@ menu:
       pageRef: /administration-systeme
       parent: windows
       weight: 2
+    # Réseau
+    - identifier: reseau
+      name: "Réseau"
+      weight: 2
+      params:
+        type: menu
+    - name: "Commutateur Cisco"
+      pageRef: /reseau/cisco/cisco-switch
+      parent: reseau
+      weight: 1
     # Linux
     - identifier: linux
       name: "Linux"
-      weight: 2
+      weight: 3
       params:
         type: menu
     - name: "Debian"
@@ -53,13 +63,13 @@ menu:
     # Autres
     - name: "À propos"
       pageRef: /about
-      weight: 3
-    - name: Search
       weight: 4
+    - name: Search
+      weight: 5
       params:
         type: search
     - name: Theme Toggle
-      weight: 5
+      weight: 6
       params:
         type: theme-toggle
 
