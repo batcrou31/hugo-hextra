@@ -23,7 +23,9 @@ Diriger la connexion vers le port COM choisi en 1,
 ```
 Enable
 ```
-pour entrer dans le mode privilégié. La validation de cette commande entraîne souvent la demande d’un mot de passe.
+
+> [!NOTE]
+> pour entrer dans le mode privilégié. La validation de cette commande entraîne souvent la demande d’un mot de passe.
 
 ## Visualisation des informations de configuration
 ### Commandes courantes  
@@ -90,11 +92,11 @@ config terminal
 À ce niveau on peut taper des commandes valables pour l’ensemble du switch par exemple :  
 
 ```
-hostname "nom_du_switch" 
+hostname nom_du_switch
 ```
 
 > [!NOTE]
-> Cette commande permet de donner un nom au switch. Par exemple : `hostname router1`
+> Cette commande permet de donner un nom au switch. *Exemple :* `hostname router1`
 
 ## Adressage IP  
 
@@ -113,12 +115,12 @@ Interface vlan1
 Les commandes les plus utilisées dans la configuration des interfaces sont les suivantes :
 
 ```
-Ip address "adresse_ip_de_l’interface" "masque_de_sous_réseau" 
+Ip address adresse_ip_de_l’interface masque_de_sous_réseau
 ```
 > [!NOTE]
 > *Exemple :* `ip address 172.168.16.1 255.255.240.0`
 
-Indiquer que cette interface ne doit pas être inactive :  
+Indiquer également que cette interface ne doit pas être inactive :  
 
 ```
 No shutdown
@@ -137,18 +139,18 @@ Créer le VLAN :
 Vlan X
 ```
 > [!NOTE]
-> *X étant le N° du vlan à créer ou à configurer.* Un vlan par défaut existe, il s’agit du **N°1**.  
+> *X étant le N° du VLAN à créer ou à configurer.* Un VLAN par défaut existe, il s’agit du **N°1**.  
 
-Nommer ce vlan :
+Nommer ce VLAN :
 ```
-Name "Nom_du_vlan"
+Name Nom_du_vlan
 ```
 > [!NOTE]
 > *Exemple :* `Name Vlan10`  
 
 Ensuite il faut affecter les ports aux vlans.
 
-### Aplication des VLANs sur un port en mode "TRUNK"
+### Aplication des VLANs sur un port en mode `TRUNK`
 **Le mode trunk permet de transmetre des données provenant de plusieurs VLAN.**  
 
 Exemple avec le port **N°1** :
@@ -162,13 +164,17 @@ exit
 > [!NOTE]
 > Il est également possible de spécifier les VLANs car par défaut **toutes les VLANs peuvent passer sur un port trunk**.
 >
-> *Exemple :* Les VLANs 20,30,99 font partie du trunk sur le port N°1
+> *Exemple :* Les VLANs 20, 30 et 99 font partie du trunk sur le port N°1
 >
 > ```
+> interface fa0/1
+> switchport mode trunk 
 > switchport trunk allowed vlan 20,30,99
+> no shutdown
+> exit
 > ```  
 
-### Aplication des VLAN sur un port en mode "ACCES"
+### Aplication des VLAN sur un port en mode `ACCES`
 **Le mode acces permet de transmetre des données au sein d'un même VLAN.**  
 
 Exemple avec le port **N°2** et le **VLAN 10** :
@@ -206,7 +212,7 @@ ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-rsa -oP
 ```
 
 > [!WARNING]+ Attention
-> Penser à changer nom_d_utilisateur@adresse_ip créé à l'étape précedente.
+> Penser à changer `nom_d_utilisateur@adresse_ip` créé à l'étape précedente.
 
 ## Remise à plat du switch
 Commande de **mise en configuration d’usine du switch** :  
