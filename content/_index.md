@@ -5,8 +5,10 @@ layout: hextra-home
 
 {{< hextra/hero-badge >}}
   <div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
-  <span>Dernière mise à jour du site le :{{< lastmod >}}</span>
+  <span>Dernière mise à jour du site le : </span>
 {{< /hextra/hero-badge >}}
+
+{{< lastmod >}}
 
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
