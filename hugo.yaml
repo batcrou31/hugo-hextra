@@ -50,7 +50,7 @@ menu:
     - name: "Commutateur Cisco"
       pageRef: /reseau/cisco/cisco-switch
       parent: reseau
-      weight: 2
+      weight: 1
     # Linux
     - identifier: linux
       name: "Linux"
