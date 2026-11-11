@@ -81,13 +81,13 @@ il faut rajouter un `#` avant le `deb cdrom:` :
 ## Création de certificat SSH
 
 > [!WARNING]+ Attention
-> Les manipulations suivante sont à efftuer sur **Windows** !
+> Les manipulations suivante sont à effectuer sur **Windows** !
 
-Pour génerer un certificat, il faut d'abord ouvrir le Terminal en Administrateur puis se déplacer dans le répertoire suivant :
+Pour génerer un certificat, il faut d'abord ouvrir un Terminal en Administrateur puis se placer dans le répertoire suivant :
 ```
 cd .ssh 
 ```
-Ensuite, entrez la commande suivante :  
+Ensuite, entrez la commande suivante suivant pour générer un certificat `rsa` de 2048 bits:  
 
 ```
 ssh-keygen -t rsa -b 2048 
@@ -104,7 +104,7 @@ Contenu du dossier `.ssh` :
 ![](/images/debian/conf-deb/certif-1.png)
 
 > [!WARNING]+ Attention
-> Les manipulations suivante sont à efftuer sur **Linux** !
+> Les manipulations suivante sont à effectuer sur **Linux** !
 
 Ensuite il faut aller dans le dossier `.ssh` :
 ```
@@ -120,7 +120,7 @@ nano authorized_keys
 ```
 
 > [!WARNING]+ Attention
-> Les manipulations suivante sont à efftuer sur **Windows** !
+> Les manipulations suivante sont à effectuer sur **Windows** !
 
 Il faut ensuite retourner dans le dossier `.ssh` créer un fichier `config`  
 
@@ -135,11 +135,13 @@ Pour finir, vous pouvez maintenant vous conecter en SSH sur vos machines sans mo
 ```
 ssh test
 ```
+
+### Facultatif
 {{< details title="Supprimer l'authentification par mot de passe de l'utilisateur `ROOT`" closed="true" >}}
-étant donner que vous pouvez vous connecter grace à un certificat, vous pouvez supprimer l'authentification par mots de passe de l'utilisateur `ROOT` :
+étant donner que l'on peut ce connecter grâce à un certificat, ont peut supprimer l'authentification par mots de passe de l'utilisateur `ROOT` :
 
 ``` Bash {filename="/etc/ssh/sshd_config"}
-PermitRootLogin no
+PermitRootLogin prohibit-password
 ```
 pour finir, redémarer le service ssh : 
 
