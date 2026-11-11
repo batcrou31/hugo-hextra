@@ -1,3 +1,1 @@
-{{- range first 1 (sort .Site.RegularPages ".Lastmod" "desc") -}}
-  {{- .Lastmod.Format "02/01/2006" -}}
-{{- end -}}
+{{- site.Lastmod.Format "02/01/2006" -}}
