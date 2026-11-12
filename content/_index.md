@@ -22,9 +22,7 @@ layout: hextra-home
 
 {{< hextra/feature-grid cols="2" >}}
 {{< cards cols="2" >}}
-  {{< card link="CV.pdf" title="Mon CV" icon="academic-cap" >}}
+  {{< card link="cv_crouvizier_baptiste_12-11-2026.pdf" title="Mon CV" icon="academic-cap" >}}
   {{< card link="about" title="À propos" icon="question-mark-circle" >}}
 {{< /cards >}}
 {{< /hextra/feature-grid >}}  
-
-<div class="hx:mb-6"></div>
