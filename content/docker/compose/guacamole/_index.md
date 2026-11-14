@@ -261,7 +261,7 @@ sysctl -w net.ipv4.conf.br-${ID_Reseau_guacamole}.bc_forwarding=1
 ```
 
 > [!NOTE]
-> *dans cette exemple ${ID_Reseau_guacamole} est à remplacer par : df352d45cbd3* ce qui donne :
+> dans cette exemple, ``${ID_Reseau_guacamole}`` est à remplacer par : ``df352d45cbd3`` ce qui donne :
 > ``` bash
 > sysctl -w net.ipv4.conf.br-df352d45cbd3.bc_forwarding=1
 > ```
