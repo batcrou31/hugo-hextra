@@ -56,16 +56,26 @@ menu:
       pageRef: /linux/debian
       parent: linux
       weight: 1
+    # Docker
+    - identifier: docker
+      name: "Docker"
+      weight: 4
+      params:
+        type: menu
+    - name: "Docker compose"
+      pageRef: /docker/compose
+      parent: docker
+      weight: 1
     # Autres
     - name: "À propos"
       pageRef: /about
-      weight: 4
-    - name: Search
       weight: 5
+    - name: Search
+      weight: 6
       params:
         type: search
     - name: Theme Toggle
-      weight: 6
+      weight: 7
       params:
         type: theme-toggle
 
