@@ -150,9 +150,7 @@ networks:
     external: true
 ```
 
-### Installation
-
-Démarer une prmière fois votre stack, puis l'éteindre juste après ``(UP/DOWN)``.  
+Démarez une première fois votre stack, puis l'éteindre juste après ``(UP/DOWN)``.  
 
 ### Initialisation de la base de donnée
 
@@ -172,16 +170,16 @@ docker exec -i guacamole_db mysql --user admin --password=${mysql_password_12345
 
 Ensuite rendez vous sur l'interface web d'Apache Guacamole, et saisissez les identifiants par défaut : 
 
-- Identifiant : ``guacadmin``
-- Mot de passe : ``guacadmin``
+- Identifiant : **guacadmin**
+- Mot de passe : **guacadmin**
 
 ### Création d'un utilisateur
 
-Dans le coin superieur droit, sélctionner ``Pramètres`` :
+Dans le coin superieur droit, sélctionner **Pramètres** :
 
 ![](/images/compose/guacamole/APG-01.png)
 
-Sous l'onglet ``Utilisateurs``, sélectionner ``Nouvel Utilisateur`` :
+Sous l'onglet **Utilisateurs**, sélectionner **Nouvel Utilisateur** :
 
 ![](/images/compose/guacamole/APG-02.png)
 
@@ -189,13 +187,11 @@ Ensuite, il faut entrer un **identifiant** et son **mot de passe** puis **cochez
 
 ![](/images/compose/guacamole/APG-03.png)
 
-Pour finir, il faut se déconnecter de l'utilisateur ``guacadmin`` et se reconnecter avec l'utilisateur créé précédemment, puis retourner dans l'onglet ``Utilisateurs`` et sélectionner l'utilisateur ``guacadmin``:
+Pour finir, il faut se déconnecter de l'utilisateur **guacadmin** et se reconnecter avec l'utilisateur créé précédemment, puis retourner dans l'onglet **Utilisateurs** et sélectionner l'utilisateur **guacadmin** :
 
 ![](/images/compose/guacamole/APG-04.png)
 
-Puis sélectionner ``Supprimer`` :
-
-![](/images/compose/guacamole/APG-05.png)
+Puis sélectionner **Supprimer**.
 
 ### Création d'une conexion VNC
 
