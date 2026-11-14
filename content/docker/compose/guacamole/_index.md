@@ -152,6 +152,8 @@ networks:
 
 Démarez une première fois votre stack, puis l'éteindre juste après ``(UP/DOWN)``.  
 
+## Installation
+
 ### Initialisation de la base de donnée
 
 Dans un terminal ssh, naviguez dans le répertoire commun des conteneurs docker ``(/home/docker/appdata)``.  
@@ -175,7 +177,7 @@ Ensuite rendez vous sur l'interface web d'Apache Guacamole, et saisissez les ide
 
 ### Création d'un utilisateur
 
-Dans le coin superieur droit, sélctionner **Pramètres** :
+Dans le coin superieur droit, sélctionner **Paramètres** :
 
 ![](/images/compose/guacamole/APG-01.png)
 
@@ -210,11 +212,11 @@ Sur votre poste client RealVNC Server, assurez vous d'avoir :
 ![](/images/compose/guacamole/APG-VNC-01.png)
 {{< /details >}}
 
-Dans le coin superieur droit, sélctionner ``Pramètres`` :
+Dans le coin superieur droit, sélctionner **Paramètres** :
 
 ![](/images/compose/guacamole/APG-01.png)
 
-Sous l'onglet ``Connexions``, sélectionner ``Nouvelle Connexions`` :
+Sous l'onglet **Connexions**, sélectionner **Nouvelle Connexions** :
 
 ![](/images/compose/guacamole/APG-06.png)
 
@@ -224,11 +226,11 @@ Renseignez les infomrations suivantes : *(à adapter selon votre configuration)*
 
 ### Création d'une conexion RDP
 
-Dans le coin superieur droit, sélctionner ``Pramètres`` :
+Dans le coin superieur droit, sélctionner **Paramètres** :
 
 ![](/images/compose/guacamole/APG-01.png)
 
-Sous l'onglet ``Connexions``, sélectionner ``Nouvelle Connexions`` :
+Sous l'onglet **Connexions**, sélectionner **Nouvelle Connexions** :
 
 ![](/images/compose/guacamole/APG-06.png)
 
@@ -236,3 +238,43 @@ Renseignez les infomrations suivantes : *(à adapter selon votre configuration)*
 
 ![](/images/compose/guacamole/APG-08.png)  
 ![](/images/compose/guacamole/APG-09.png)
+
+## Configuration du Wake-on-LAN
+
+Par défaut, il n'est pas possible qu'un conteneur docker puisse diffuser les packets WOL en broadcast car le réseau bridge docker est isolé. Il faut donc **modifier directement la configuration de l'interface bridge guacamole**.  
+
+Sur votre terminal SSH, listeé les réseaux docker avec la commande suivante :
+
+``` bash
+docker network list
+```
+Il faut maintenant copier l'ID du réseau **guacamole** : 
+
+![](/images/compose/guacamole/APG-SSH-01.png)
+
+Pour finir, entrez les commandes suivante :
+
+``` bash
+sysctl -w net.ipv4.icmp_echo_ignore_broadcasts=0
+sysctl -w net.ipv4.conf.all.bc_forwarding=1
+sysctl -w net.ipv4.conf.br-${ID_Reseau_guacamole}.bc_forwarding=1
+```
+
+> [!NOTE]
+> *dans cette exemple ${ID_Reseau_guacamole} est à remplacer par : df352d45cbd3* ce qui donne :
+> ``` bash
+> sysctl -w net.ipv4.conf.br-df352d45cbd3.bc_forwarding=1
+> ```
+
+puis pour rendre cette configuration opérationelle pour les prochains redémarage : 
+
+``` bash
+
+echo 'net.ipv4.icmp_echo_ignore_broadcasts=0' | tee /etc/sysctl.d/97-docker-broadcast.conf
+echo 'net.ipv4.conf.all.bc_forwarding=1' | tee -a /etc/sysctl.d/97-docker-broadcast.conf
+echo 'net.ipv4.conf.br-${ID_Reseau_guacamole}.bc_forwarding=1' | tee /etc/sysctl.d/99-docker-bridge-guacamole.conf
+```
+
+Enfin, dans Apache Guacamole *(Paramètres > Connexions)*, sélectionner l'hôte que vous souhaitez démarrer par WOL et effectuer la configuration suivante :
+
+![](/images/compose/guacamole/APG-SSH-02.png)
