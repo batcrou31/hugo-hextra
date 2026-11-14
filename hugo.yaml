@@ -70,17 +70,6 @@ menu:
     - name: "À propos"
       pageRef: /about
       weight: 5
-    # TEST
-    - name: More
-      params:
-        type: separator
-      weight: 1
-    - name: "About"
-      pageRef: "/about"
-      weight: 2
-    - name: "Hugo Docs ↗"
-      url: "https://gohugo.io/documentation/"
-      weight: 3
     - name: Search
       weight: 6
       params:
@@ -89,7 +78,6 @@ menu:
       weight: 7
       params:
         type: theme-toggle
-        label: true # optional, default is false
 
 # Parse Git commit
 enableGitInfo: true
