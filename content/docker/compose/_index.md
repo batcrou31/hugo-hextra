@@ -11,7 +11,7 @@ layout: wide
         link="guacamole"
         title="Installation et configuration d'Apache Guacamole"
         image="/images/compose/cover-guacamole.png"
-        imageStyle="object-fit:cover; aspect-ratio:16/9;"
+        method="Resize; options="600x q312 png"
   >}}
 
 {{< /cards >}}
