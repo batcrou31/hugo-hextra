@@ -130,6 +130,7 @@ services:
             - MYSQL_DATABASE=guacamole_db
             - MYSQL_USER=admin
             - MYSQL_PASSWORD=${mysql_password_123456}
+            - REMOTE_IP_VALVE_ENABLED=true
             - TOTP_ENABLED=false
             - BAN_ENABLED=true
             - WEBAPP_CONTEXT=ROOT
