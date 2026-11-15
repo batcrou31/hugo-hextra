@@ -4,6 +4,8 @@ sidebar:
   hide: true
 ---
 
+[Apache Guacamole](https://guacamole.apache.org/) est une passerelle de bureau à distance sans client. Elle prend en charge les protocoles standards tels que VNC, RDP et SSH.
+
 ## Prérequis
 
 - **Docker** avec le plugin **compose**
@@ -19,7 +21,7 @@ sidebar:
 
 Fichier docker compose :  
 
-- Exemple de paramètre dans la section ``environment`` de ``guacamole`` : [](https://guacamole.apache.org/doc/gug/guacamole-docker.html)
+- Exemple de paramètre facultatif dans la section ``environment`` de ``guacamole`` : https://guacamole.apache.org/doc/gug/guacamole-docker.html
 
 ``` yaml {filename="guacamole-compose.yaml"}
 services:
@@ -119,7 +121,7 @@ services:
             - guacamole_db
             - guacd
         ports:
-            - 8081:8080
+            - 8081:8080 # défaut 8080:8080
         links:
             - guacd
         environment:
@@ -156,7 +158,7 @@ Démarez une première fois votre stack, puis l'éteindre juste après ``(UP/DOW
 
 ### Initialisation de la base de donnée
 
-Dans un terminal ssh, naviguez dans le répertoire commun des conteneurs docker ``(/home/docker/appdata)``.  
+Dans un terminal SSH, naviguez dans le répertoire commun des conteneurs docker ``(/home/docker/appdata)``.  
 
 Entrez la commande suivante afin de genérer le script de configuration de la base de donnée : 
 
@@ -275,6 +277,6 @@ echo 'net.ipv4.conf.all.bc_forwarding=1' | tee -a /etc/sysctl.d/97-docker-broadc
 echo 'net.ipv4.conf.br-${ID_Reseau_guacamole}.bc_forwarding=1' | tee /etc/sysctl.d/99-docker-bridge-guacamole.conf
 ```
 
-Enfin, dans Apache Guacamole *(Paramètres > Connexions)*, sélectionner l'hôte que vous souhaitez démarrer par WOL et effectuer la configuration suivante :
+Enfin, dans Apache Guacamole ``(Paramètres > Connexions)``, sélectionner l'hôte que vous souhaitez démarrer par WOL et effectuer la configuration suivante :
 
 ![](/images/compose/guacamole/APG-SSH-02.png)
