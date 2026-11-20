@@ -24,14 +24,14 @@ layout: wide
   {{< card
         link="fog"
         title="Installation et configuration de FOG"
-        image="/images/debian/cover-fog.png"
+        image="/images/debian/cover-srv-fog.png"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
 
   {{< card
         link="tiger_vnc"
         title="Installation et configuration de TigerVNC sur un environnement de bureau Xfce"
-        image="/images/debian/cover-tiger_vnc.png"
+        image="/images/debian/cover-vnc.png"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
 
