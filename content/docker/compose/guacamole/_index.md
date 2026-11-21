@@ -1,5 +1,5 @@
 ---
-title: "Installation et configuration d'Apache Guacamole"
+title: "Apache Guacamole"
 sidebar:
   hide: true
 ---
