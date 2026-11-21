@@ -1,5 +1,7 @@
 ---
 title: "Ajout d'une conexion VNC"
+sidebar:
+  hide: false
 ---
 
 ### Création d'une conexion VNC

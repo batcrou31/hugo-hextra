@@ -1,5 +1,7 @@
 ---
 title: "Ajout d'une conexion RDP"
+sidebar:
+  hide: false
 ---
 
 ### Création d'une conexion RDP
