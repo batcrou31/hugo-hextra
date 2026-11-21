@@ -1,7 +1,5 @@
 ---
 title: "Apache Guacamole"
-sidebar:
-  hide: true
 ---
 
 [Apache Guacamole](https://guacamole.apache.org/) est une passerelle de bureau à distance sans client. Elle prend en charge les protocoles standards tels que VNC, RDP et SSH.
@@ -197,50 +195,6 @@ Pour finir, il faut se déconnecter de l'utilisateur **guacadmin** et se reconne
 ![](/images/compose/guacamole/APG-04.png)
 
 Puis sélectionner **Supprimer**.
-
-### Création d'une conexion VNC
-
-{{< details title="Manipulation pour RealVNC Server" closed="true" >}}
-
-Sur votre poste client RealVNC Server, assurez vous d'avoir :
-
-- **ProtocolVersion** en **3.8**
-
-![](/images/compose/guacamole/APG-VNC-02.png)
-
-- Chiffrement : **De préferance inactif**
-- Authentification : **Mot de passe VNC**
-- Cochez : **Autorise la connexion d'utilisateur VNC Viewer herités**
-
-![](/images/compose/guacamole/APG-VNC-01.png)
-{{< /details >}}
-
-Dans le coin superieur droit, sélctionner **Paramètres** :
-
-![](/images/compose/guacamole/APG-01.png)
-
-Sous l'onglet **Connexions**, sélectionner **Nouvelle Connexions** :
-
-![](/images/compose/guacamole/APG-06.png)
-
-Renseignez les infomrations suivantes : *(à adapter selon votre configuration)* 
-
-![](/images/compose/guacamole/APG-07.png)
-
-### Création d'une conexion RDP
-
-Dans le coin superieur droit, sélctionner **Paramètres** :
-
-![](/images/compose/guacamole/APG-01.png)
-
-Sous l'onglet **Connexions**, sélectionner **Nouvelle Connexions** :
-
-![](/images/compose/guacamole/APG-06.png)
-
-Renseignez les infomrations suivantes : *(à adapter selon votre configuration)* 
-
-![](/images/compose/guacamole/APG-08.png)  
-![](/images/compose/guacamole/APG-09.png)
 
 ## Configuration du Wake-on-LAN
 
