@@ -4,6 +4,8 @@ sidebar:
   hide: true
 ---
 
+![](/images/debian/cover-debian-13.png)
+
 [Debian](https://www.debian.org/) est une distribution Linux libre, stable et sécurisée, reconnue pour sa fiabilité et adaptée aussi bien aux serveurs qu'aux ordinateurs de bureau.
 
 ## Ressources Utiles
