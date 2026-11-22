@@ -31,7 +31,7 @@ layout: hextra-home
 
 {{< /hextra/hero-container >}}
 
-<div class="hx:mt-6">
+<div class="hx:mt-3 hx:mb-3">
 {{< hextra/hero-subtitle >}}
   Mes derniers Tutoriels :
 {{< /hextra/hero-subtitle >}}
