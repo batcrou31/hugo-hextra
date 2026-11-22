@@ -4,7 +4,7 @@ sidebar:
   hide: true
 ---
 
-![](/images/debian/cover-vnc-xfce.png)
+![](/images/cisco/cover-switch-cisco.png)
 
 ## Accès à l’interface de configuration
 
