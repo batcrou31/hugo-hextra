@@ -57,7 +57,7 @@ menu:
       parent: linux
       weight: 1
     # Docker
-      name: "Docker"
+    - name: "Docker"
       pageRef: /docker/compose
       weight: 4
     # Autres
