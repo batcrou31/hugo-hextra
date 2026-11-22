@@ -1,6 +1,10 @@
 ---
 title: "Installation et configuration d'Apache Guacamole avec une base de donnée MySQL"
+sidebar:
+  hide: true
 ---
+
+![](/images/compose/cover-guacamole.png)
 
 [Apache Guacamole](https://guacamole.apache.org/) est une passerelle de bureau à distance sans client. Elle prend en charge les protocoles standards tels que VNC, RDP et SSH.
 
@@ -196,8 +200,6 @@ Pour finir, il faut se déconnecter de l'utilisateur **guacadmin** et se reconne
 
 Puis sélectionner **Supprimer**.
 
---- 
-
 ## Conexion d'un hôte RDP
 
 Dans le coin superieur droit, sélctionner **Paramètres** :
@@ -212,8 +214,6 @@ Renseignez les infomrations suivantes : *(à adapter selon votre configuration)*
 
 ![](/images/compose/guacamole/APG-08.png)  
 ![](/images/compose/guacamole/APG-09.png)
-
----
 
 ## Conexion d'un hôte VNC
 
