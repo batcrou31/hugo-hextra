@@ -42,8 +42,8 @@ menu:
       weight: 2
       params:
         type: menu
-    - name: "Commutateur Cisco"
-      pageRef: /reseau/cisco/cisco-switch
+    - name: "Cisco IOS"
+      pageRef: /reseau/cisco
       parent: reseau
       weight: 1
     # Linux
@@ -57,15 +57,9 @@ menu:
       parent: linux
       weight: 1
     # Docker
-    - identifier: docker
       name: "Docker"
-      weight: 4
-      params:
-        type: menu
-    - name: "Docker compose"
       pageRef: /docker/compose
-      parent: docker
-      weight: 1
+      weight: 4
     # Autres
     - name: "À propos"
       pageRef: /about

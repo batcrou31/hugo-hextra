@@ -1,18 +1,42 @@
 ---
-title: Configuration de base sur un commutateur Cisco
+title: Configuration commutateur Cisco
 sidebar:
   hide: true
 ---
 
+![](/images/debian/cover-vnc-xfce.png)
+
 ## Accès à l’interface de configuration
-- Brancher le port console sur le port série de votre appareil CISCO,  
-- Sur votre ordinateur lancer/installer <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank" rel="noopener noreferrer">Putty</a> avec la configuration suivante :
+
+### Méthode avec Putty
+
+Brancher le port console sur le port série de votre appareil CISCO,  
+
+Sur votre ordinateur lancer/installer <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank" rel="noopener noreferrer">Putty</a> avec la configuration suivante :
 
 - Diriger la connexion vers **le port COM choisi en 1**,
 - Choisir un débit de **9600 bit/s**
 - **8 bits** de données
 - **Pas de parité**
 - **1 bit** de stop
+
+### Méthode avec Minicom
+
+Brancher le port console sur le port série de votre appareil CISCO,  
+
+Vérifier la présence du port série avec la commande suivante :
+
+```
+sudo dmesg | sudo grep tty
+```
+
+puis effectuer la configuration suivante : 
+
+- **sudo minicom -s**
+- A: **/dev/ttyUSB0**
+- E: **9600 8N1**
+
+Pour finir, sélectionner `Sortir`.
 
 ## Configuration du Switch
 
