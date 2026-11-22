@@ -80,7 +80,7 @@ networks:
     external: true
 ```
 
-Fichier docker compose configuré avec Traefik :
+{{< details title="Fichier compose configuré avec Traefik" closed="true" >}}
 
 ``` yaml {filename="guacamole-compose-traefik.yaml"}
 services:
@@ -154,6 +154,8 @@ networks:
   traefik:
     external: true
 ```
+
+{{< /details >}}
 
 Démarez une première fois votre stack, puis l'éteindre juste après ``(UP/DOWN)``.  
 
