@@ -3,7 +3,7 @@ title: Acceuil
 layout: hextra-home
 ---
 
-{{< hextra/hero-container image="images/memoji_baptiste.png" imageWidth="450" imageHeight="450" >}}
+{{< hextra/hero-container image="images/memoji_baptiste.png" imageWidth="350" imageHeight="350" >}}
 
 {{< hextra/hero-badge >}}
   <div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
