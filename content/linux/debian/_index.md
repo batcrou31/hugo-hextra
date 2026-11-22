@@ -17,7 +17,7 @@ layout: wide
   {{< card
         link="isc-dhcp"
         title="Installation et configuration du service ISC-DHCP"
-        image="/images/debian/cover-isc.png"
+        image="/images/debian/cover-isc-dhcp.png"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
 
