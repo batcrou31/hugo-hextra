@@ -3,6 +3,8 @@ title: Acceuil
 layout: hextra-home
 ---
 
+{{< hextra/hero-container image="images/memoji_baptiste.png" imageWidth="600" imageHeight="600" >}}
+
 {{< hextra/hero-badge >}}
   <div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
   <span>Dernière mise à jour du site le : {{< lastmod >}} </span>
