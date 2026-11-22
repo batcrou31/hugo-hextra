@@ -24,7 +24,7 @@ layout: wide
   {{< card
         link="fog"
         title="Installation et configuration de FOG"
-        image="/images/debian/cover-srv-fog.png"
+        image="/images/debian/cover-fog-project.png"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
 

@@ -4,6 +4,8 @@ sidebar:
   hide: true
 ---
 
+![](/images/debian/cover-fog-project.png)
+
 [FOG](https://fogproject.org/) (Free and Open-source Ghost) est une solution libre de déploiement et de clonage de postes en réseau.
 
 {{< callout type="warning" >}}
