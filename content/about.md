@@ -1,6 +1,7 @@
 ---
 title: À propos
 type: about
+width: normal
 ---
 <div class="hx:mt-6 hx:mb-6">
     {{< badge content="Mail" link="mailto:b.crouvizier@hotmail.com" icon="mail" >}}
