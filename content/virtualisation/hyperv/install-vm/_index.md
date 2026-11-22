@@ -54,25 +54,33 @@ Sélectionnez la machine virtuelle créer précedement, puis dans le panneau lat
 
 ![](/images/virtualisation/hyperv/CONFIG-VM-01.png)
 
-Pour l'action d'arrêt automatique, sélectionnez **Arrêter le système d'exploitation invité** :
+### Action d'arrêt automatique
+
+sélectionnez **Arrêter le système d'exploitation invité** :
 
 ![](/images/virtualisation/hyperv/CONFIG-VM-02.png)
 
-Pour l'action de démarrage automatique, sélectionnez le mode qui corespond à votre besoin :
+### Action de démarrage automatique
 
-- Rien *(il ne passe rien ;-;)*
-- Démarer automatiquemenet s'il était en cours d'éxecution... *(si il était allumer, il s'allume sinon il ne s'allume pas)*
-- Toujours démarrer cet ordinateur virtuel automatiquement *(démarre la VM automatiquement au démarage de l'hôte hyper-v)*
+sélectionnez le mode qui corespond à votre besoin :
+
+- **Rien** *(il ne passe rien ;-;)*
+- **Démarer automatiquemenet s'il était en cours d'éxecution...** *(si il était allumer, il s'allume sinon il ne s'allume pas)*
+- **Toujours démarrer cet ordinateur virtuel automatiquement** *(démarre la VM automatiquement au démarage de l'hôte hyper-v)*
 
 dans cette exemple, *Rien* car c'est une VM de test qui est allumer occasionnellement : 
 
 ![](/images/virtualisation/hyperv/CONFIG-VM-03.png)
 
-Dans l'onglet points de contrôle, Décochez l'option **Utiliser des points de contrôle automatiques** :
+### Points de contrôle
+
+Décochez l'option **Utiliser des points de contrôle automatiques** :
 
 ![](/images/virtualisation/hyperv/CONFIG-VM-04.png)
 
-Dans Services d'integrations, Décochez l'option **Synchronisation date/heure** :
+### Services d'integrations
+
+Décochez l'option **Synchronisation date/heure** :
 
 ![](/images/virtualisation/hyperv/CONFIG-VM-05.png)
 
@@ -108,16 +116,20 @@ Sélectionner **Fichier image** puis **Parcourir** :
 
 ![](/images/virtualisation/hyperv/CONFIG-VM-12.png)
 
+### Sécurité
+
 Ensuite, sélectionner le modèle pour l'UEFI selon le système d'exploitation de l'invité. dans cette exemple, *Autorité de certification UEFI Microsoft* car l'invité est Fedora.
 
 ![](/images/virtualisation/hyperv/CONFIG-VM-13.png)
 
 > [!NOTE]
-> Si votre machine virtuelle est une architecture de type Windows, laisser le modèle par défaut **Microsoft Windows**
-> Si votre machine virtuelle est une architecture de type Linux *(Debian, Fedora etc...)*, basculer le modèle vers **Autorité de certification UEFI Microsoft**
-> Si votre machine virtuelle est une architecture de type FreeBSD, Linux plus encien ou si l'option précédente ne fonctionne pas, sélectionnez **Machine virtuelle dotée d'une protection maximale Open Source**
+> Si votre machine virtuelle est une architecture de type Windows, laisser le modèle par défaut **Microsoft Windows**.  
+>
+> Si votre machine virtuelle est une architecture de type Linux *(Debian, Fedora etc...)*, basculer le modèle vers **Autorité de certification UEFI Microsoft**.  
+>
+> Si votre machine virtuelle est une architecture de type FreeBSD, Linux plus encien ou si l'option précédente ne fonctionne pas, sélectionnez **Machine virtuelle dotée d'une protection maximale Open Source**.
 
-Pour le Microprogramme :
+### Microprogramme
 
 - Monter le **disque dur en première position**
 - Descendre le **lecteur DVD en seconde position**
