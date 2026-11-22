@@ -22,6 +22,8 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
+{{< /hextra/hero-container >}}
+
 {{< hextra/feature-grid cols="2" >}}
 {{< cards cols="2" >}}
   {{< card link="cv_crouvizier_baptiste_12-11-2026.pdf" title="Mon CV" icon="academic-cap" >}}
