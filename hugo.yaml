@@ -56,20 +56,30 @@ menu:
       pageRef: /linux/debian
       parent: linux
       weight: 1
+    # Virtualisation
+    - identifier: virtualisation
+      name: "Virtualisation"
+      weight: 4
+      params:
+        type: menu
+    - name: "Hyper-V"
+      pageRef: /virtualisation/hyperv
+      parent: virtualisation
+      weight: 1
     # Docker
     - name: "Docker"
       pageRef: /docker/compose
-      weight: 4
+      weight: 5
     # Autres
     - name: "À propos"
       pageRef: /about
-      weight: 5
-    - name: Search
       weight: 6
+    - name: Search
+      weight: 7
       params:
         type: search
     - name: Theme Toggle
-      weight: 7
+      weight: 8
       params:
         type: theme-toggle
 
