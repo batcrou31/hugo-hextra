@@ -33,8 +33,8 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
-{{< hextra/feature-grid cols="2" >}}
-{{< cards cols="2" >}}
+{{< hextra/feature-grid cols="3" >}}
+{{< cards cols="3" >}}
   {{< card link="virtualisation/hyperv/install-vm" title="Création d'une machine virtuelle sur Hyper-V" image="/images/virtualisation/cover-hyperv-install-vm.png" imageStyle="object-fit:cover; aspect-ratio:16/9;" tag="22/11/2026" tagColor="blue" tagIcon="upload" >}}
   {{< card link="docker/compose/guacamole" title="Instalattion et configuration d'Apache Guacamole avec une base de donnée MySQL" image="/images/compose/cover-guacamole.png" imageStyle="object-fit:cover; aspect-ratio:16/9;" tag="20/11/2026" tagColor="blue" tagIcon="upload" >}}
   {{< card link="linux/debian/tiger_vnc" title="Instalattion et configuration de TigerVNC sur un environnement de bureau Xfce" image="/images/debian/cover-vnc-xfce.png" imageStyle="object-fit:cover; aspect-ratio:16/9;" tag="29/10/2026" tagColor="blue" tagIcon="upload" >}}
