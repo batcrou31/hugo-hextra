@@ -1,5 +1,5 @@
 ---
-title: "Installation et configuration d'Apache Guacamole avec une base de donnée MySQL"
+title: "Apache Guacamole avec base de donnée MySQL"
 sidebar:
   hide: true
 ---

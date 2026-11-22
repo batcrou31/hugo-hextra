@@ -9,7 +9,7 @@ layout: wide
 {{< cards >}}
   {{< card
         link="guacamole"
-        title="Apache Guacamole"
+        title="Apache Guacamole avec base de donnée MySQL"
         image="/images/compose/cover-guacamole.png"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
