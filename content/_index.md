@@ -3,7 +3,7 @@ title: Acceuil
 layout: hextra-home
 ---
 
-{{< hextra/hero-container image="images/memoji_baptiste.png" imageWidth="300" imageHeight="300" imageTitle="baptiste_memoji" >}}
+{{< hextra/hero-container image="images/memoji_baptiste.png" imageWidth="450" imageHeight="450" >}}
 
 {{< hextra/hero-badge >}}
   <div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
@@ -22,14 +22,14 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
-{{< /hextra/hero-container >}}
-
 {{< hextra/feature-grid cols="2" >}}
 {{< cards cols="2" >}}
   {{< card link="cv_crouvizier_baptiste_12-11-2026.pdf" title="Mon CV" icon="academic-cap" >}}
   {{< card link="about" title="À propos" icon="question-mark-circle" >}}
 {{< /cards >}}
 {{< /hextra/feature-grid >}}  
+
+{{< /hextra/hero-container >}}
 
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-subtitle >}}
