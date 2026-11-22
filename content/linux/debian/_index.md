@@ -10,7 +10,7 @@ layout: wide
   {{< card
         link="conf-deb-13"
         title="Configuration de Debian 13"
-        image="/images/debian/cover-debian-13.png"
+        image="/images/debian/cover-debian.png"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
 
