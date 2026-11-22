@@ -37,3 +37,4 @@ layout: hextra-home
 {{< cards cols="3" >}}
   {{< card link="virtualisation/hyperv/install-vm" title="Création d'une machine virtuelle sur Hyper-V" image="/images/virtualisation/cover-hyperv-install-vm.png" imageStyle="object-fit:cover; aspect-ratio:16/9;" tag="22/11/2026" tagColor="blue" tagIcon="upload" tagBorder=false >}}
 {{< /cards >}}
+{{< /hextra/feature-grid >}}  
