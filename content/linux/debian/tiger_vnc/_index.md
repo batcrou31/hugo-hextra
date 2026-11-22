@@ -1,8 +1,10 @@
 ---
-title: "Installation et configuration de TigerVNC sur un environnement de bureau Xfce"
+title: "TigerVNC sur un environnement de bureau Xfce"
 sidebar:
   hide: true
 ---
+
+![](/images/debian/cover-vnc-xfce.png)
 
 ## Prérequis
 

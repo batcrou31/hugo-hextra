@@ -16,22 +16,22 @@ layout: wide
 
   {{< card
         link="isc-dhcp"
-        title="Installation et configuration du service ISC-DHCP"
+        title="Serveur DHCP : ISC-DHCP"
         image="/images/debian/cover-isc-dhcp.png"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
 
   {{< card
         link="fog"
-        title="Installation et configuration de FOG"
+        title="FOG project"
         image="/images/debian/cover-fog-project.png"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
 
   {{< card
         link="tiger_vnc"
-        title="Installation et configuration de TigerVNC sur un environnement de bureau Xfce"
-        image="/images/debian/cover-vnc.png"
+        title="TigerVNC sur un environnement de bureau Xfce"
+        image="/images/debian/cover-vnc-xfce.png"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
 

@@ -1,5 +1,5 @@
 ---
-title: "Installation et configuration d'un serveur FOG"
+title: "FOG project"
 sidebar:
   hide: true
 ---
