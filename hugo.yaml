@@ -118,7 +118,7 @@ params:
         icon: linkedin
       - title: Discord
         url: "https://discord.com/users/925729438790995998"
-        icon: discord
+        icon: discord-dark
 
   imageZoom:
     enable: true
