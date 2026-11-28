@@ -19,6 +19,7 @@ markup:
     noClasses: false
 
 defaultContentLanguage: fr
+enableInlineShortcodes: true
 
 menu:
   main:
